@@ -139,7 +139,7 @@ const editTool = (enteredToolData) => {
       <Routes>
         <Route path='/' element={<Home toolsInfo={toolsInfo}/>} ></Route>
         <Route path='/records' element={<Records toolsInfo={toolsInfo} deletehandler={deleteTool} onAddToolData={addToolDataHandler}/>} ></Route>
-        <Route path='/leaderboard' element={<Leaderboard toolsInfo={toolsInfo} />} ></Route>
+        <Route path='/leaderboard' element={<Leaderboard dataInfo={dataInfo} />} ></Route>
         <Route path='*' element={<ErrorPage />}></Route>
         <Route path= '/records/:slug' element={<ToolItem />} />
         <Route path= '/records/new-record' element={<NewRecord onAddToolData={addToolDataHandler}/>}></Route>

@@ -1,9 +1,9 @@
 import React from 'react';
 import './Board.css';
 
-const Board = ({toolsInfo}) => {     
+const Board = ({dataInfo}) => {     
 
-console.log(toolsInfo);
+console.log(dataInfo);
 
 function sortInfo(infoArray) {
     infoArray.sort((a, b) => {
@@ -16,12 +16,12 @@ function sortInfo(infoArray) {
     <>
       <div className='board-hero'>
       <div className="item-banner">
-        LeaderBoard
+        LeaderBoards
       </div>
     </div>
     <div className="board">
         
-        {sortInfo(toolsInfo).map((tool) =>  
+        {sortInfo(dataInfo).map((tool) =>  
       <div className="board-container">
         <div className="name">
             <h2>{tool.author} </h2>

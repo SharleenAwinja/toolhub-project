@@ -1,10 +1,10 @@
 import React from 'react';
 import Board from '../components/Board';
 
-function Leaderboard({toolsInfo}) {
+function Leaderboard({dataInfo}) {
   return (
     <div>
-      <Board toolsInfo={toolsInfo} />
+      <Board dataInfo={dataInfo} />
     </div>
   )
 }
